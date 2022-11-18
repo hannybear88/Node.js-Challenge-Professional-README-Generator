@@ -35,9 +35,9 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## User Story
 
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+AS A developer<br>
+I WANT a README generator<br>
+SO THAT I can quickly create a professional README for a new project<br>
 
 
 ## Acceptance Criteria
