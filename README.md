@@ -95,14 +95,14 @@ If you have any questions about my repo, please do not hesitate to open an issue
 
 ##  Credits
 
-<ol>
+<ul>
         <li>Starter Code provided by UCSD Coding Bootcamp</li>
         <li>Hannah Chung</li>
- </ol>
+ </ul>
 
 ##  Contributors
 
-<ol>
+<ul>
         <li>Starter Code provided by UCSD Coding Bootcamp></li>
         <li>Hannah Chung</li>
- </ol>
+ </ul>
