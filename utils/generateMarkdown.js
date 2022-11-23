@@ -66,16 +66,16 @@ ${install}
       return '';
   }
 };
-// creates screenshot section
-const createScreenshots = screenshotItem => {
-  let allScreenshots = '';
-  if (screenshotItem) {
-      screenshotItem.forEach(shot => {
-      allScreenshots += `![${shot.screenshotAlt}](${shot.screenshotLink})
-${shot.screenshotDesc}
+// creates acceptance criteria and screenshots section
+const createAcceptanceCriteriaAndScreenshots = acceptanceCriteriaandScreenshotsItem => {
+  let allAcceptanceCriteriaandScreenshots = '';
+  if (acceptanceCriteriaandScreenshotsscreenshotItem) {
+    AcceptanceCriteriaandScreenshotsItem.forEach(shot => {
+      allAcceptanceCriteriaandScreenshots += `![${shot.screenshotAlt}](${shot.screenshotLink})
+${shot.screenshotDescriptions}
 `;
   });
-  return `${allScreenshots}`;
+  return `${allAcceptanceCriteriaandScreenshots}`;
   } else {
       return '';
   }
