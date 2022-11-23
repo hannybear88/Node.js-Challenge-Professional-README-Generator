@@ -150,6 +150,10 @@ function generateMarkdown(data) {
           content: createInstallation(data.installation)
       },
       {
+        header: 'Usage',
+        content: createUsage(data.usage)
+    },
+      {
           header: 'User Story',
           content: createUsage(data.userStory)
       },
@@ -157,10 +161,6 @@ function generateMarkdown(data) {
           header: 'Acceptance Criteria And Screenshots',
           content: acceptanceCriteriaAndScreenshotLinks(data.acceptanceCriteriaAndScreenshots)
       },
-      // {
-      //     header: 'Screenshots',
-      //     content: createScreenshots(data.screenshots)
-      // },
       {
           header: 'Technologies',
           content: createTechnologies(data['technologies'])
@@ -217,7 +217,7 @@ ${sectionItem.content}
 ## Description
 ${createDescription(title, data.description, data.link)}
 ## Contents
-${createTableOfContents(sectionArr)}
+${createTableOfContents(sectionArray)}
 ${readmeContents}`;
 }
 module.exports = generateMarkdown;
