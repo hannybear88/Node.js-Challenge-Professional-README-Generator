@@ -97,8 +97,8 @@ const createTechnologies = technologies =>{
 };
 
 // creates usage section
-const createUsage = (usage, screenshots) => {
-  return `${usage} ${createScreenshots(screenshots)}`
+const createUsage = (usage) => {
+  return `${usage}`
 };
 // creates license section
 const createLicense = license => {
@@ -158,8 +158,8 @@ function generateMarkdown(data) {
           content: createUsage(data.userStory)
       },
       {
-          header: 'Acceptance Criteria And Screenshots',
-          content: acceptanceCriteriaAndScreenshotLinks(data.acceptanceCriteriaAndScreenshots)
+          // header: 'Acceptance Criteria And Screenshots',
+          // content: acceptanceCriteriaAndScreenshots(data.acceptanceCriteriaAndScreenshots)
       },
       {
           header: 'Technologies',
@@ -181,14 +181,14 @@ function generateMarkdown(data) {
           header: 'Questions',
           content: createQuestions(data.questions, github, repo)
       },
-      {
-          header: 'Credits',
-          content: createCredits(data.credits)
-      },
-      {
-        header: 'Contributors',
-        content: createContributors(data.contributors)
-      },
+      // {
+      //     header: 'Credits',
+      //     content: createCredits(data.credits)
+      // },
+      // {
+      //   header: 'Contributors',
+      //   content: createContributors(data.contributors)
+      // },
   ];
 
   // adds each README section if contents for the section exists

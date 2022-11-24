@@ -309,7 +309,7 @@ const screenshotQues = [
 ];
 
 // array of prompts for adding credits
-const creditQues = [
+const creditQuestions = [
     {
         type: 'input',
         message: 'Please give your credit a name. (Required)',
@@ -410,12 +410,8 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    return inquirer.prompt(questions);
-};
-
-// function call to initialize program
-init()
-    .then(userResponse => { 
+     inquirer.prompt(questions)
+     .then(userResponse => { 
        
         // calls function to add screenshots based on user selection
         if (userResponse.contents.indexOf('Screenshots') > -1) {
@@ -438,6 +434,10 @@ init()
     .catch(err => {
         console.log(err);
     });
-Footer
+}
+
+// function call to initialize program
+init()
+   
 
 
