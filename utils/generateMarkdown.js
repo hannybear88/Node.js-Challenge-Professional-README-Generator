@@ -45,20 +45,6 @@ ${install}
       return '';
   }
 };
-// creates acceptance criteria and screenshots section
-  // const createAcceptanceCriteriaAndScreenshots = acceptanceCriteriaandScreenshotsItem => {
-  //   let allAcceptanceCriteriaandScreenshots = '';
-  //   if (acceptanceCriteriaandScreenshotsscreenshotItem) {
-  //     AcceptanceCriteriaandScreenshotsItem.forEach(shot => {
-  //       allAcceptanceCriteriaandScreenshots += `![${shot.screenshotAlt}](${shot.screenshots})
-  // ${shot.screenshotDescriptions}
-  // `;
-  //   });
-  //   return `${allAcceptanceCriteriaandScreenshots}`;
-  //   } else {
-  //       return '';
-  //   }
-  // };
 
 // creates technologies section
 const createTechnologies = technologies =>{
@@ -132,14 +118,7 @@ function generateMarkdown(data) {
         header: 'Usage',
         content: createUsage(data.usage)
     },
-      // {
-      //     header: 'User Story',
-      //     content: createUserStory(data.userStory)
-      // },
-      // {
-      //     header: 'Acceptance Criteria And Screenshots',
-      //     content: acceptanceCriteriaAndScreenshots(data.acceptanceCriteriaAndScreenshots)
-      // },
+   
       {
           header: 'Technologies',
           content: createTechnologies(data['technologies'])
@@ -160,14 +139,7 @@ function generateMarkdown(data) {
           header: 'Questions',
           content: createQuestions(data.questions, github, repo)
       },
-      // {
-      //     header: 'Credits',
-      //     content: createCredits(data.credits)
-      // },
-      // {
-      //   header: 'Contributors',
-      //   content: createContributors(data.contributors)
-      // },
+ 
   ];
 
   // adds each README section if contents for the section exists

@@ -2,9 +2,9 @@
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)  
 [![Issues](https://img.shields.io/github/issues/hannybear88/Node.js-Challenge-Professional-README-Generator)](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/issues) [![Issues](https://img.shields.io/github/contributors/hannybear88/Node.js-Challenge-Professional-README-Generator)](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/graphs/contributors) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-generating a professional README
+Generating a professional README
           
-View the deployed page at [Professional README Generator](N/A).
+View the deployed page at [Professional README Generator](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/tree/main/output).
 ## Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -20,7 +20,7 @@ inquirer
 ```
   
 ## Usage
-npm i
+npm install
   
 ## License
 This application is licensed under the MIT license.
@@ -31,7 +31,7 @@ none at this time
 ## Tests
 To run tests on the application, install
 ```
-test
+tests
 ```
 and run `npm run test` from the command line.
   

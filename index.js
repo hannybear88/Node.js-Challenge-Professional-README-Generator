@@ -26,7 +26,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide a project title.  (Required)',
+        message: 'What is the title of your project?  (Required)',
         name: 'title',
         validate: nameInput => {
             if (nameInput) {
@@ -64,13 +64,13 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide a description of your application. (Required)',
+        message: 'Please provide a short description of your project. (Required)',
         name: 'description',
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
             } else {
-                console.log('Please provide a description of your application!');
+                console.log('Please provide a short description of your project!');
                 return false;
             }
         }
@@ -103,7 +103,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please list any required packages for installation of your application.',
+        message: 'What command should be run to install dependencies?',
         name: 'installation',
         validate: installInput => {
             if (installInput) {
@@ -116,7 +116,7 @@ const questions = [
     },
     {
         type: 'list',
-        message: 'Please provide license information.',
+        message: 'What kind of license should your project have?',
         name: 'license',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'ISC'],
         default: 0,
@@ -124,25 +124,11 @@ const questions = [
             if (licenseInput) {
                 return true;
             } else {
-                console.log('Please provide license information!');
+                console.log('Please provide what kind of license your project should have!');
                 return false;
             }
         }
     }, 
-    // {
-    //     type: 'checkbox',
-    //     message: 'Please select the technologies that your application was built with.',
-    //     name: 'technologies',
-    //     choices: ['HTML', 'CSS', 'Javascript', 'Node.js', 'Markdown.js', 'GraphQL', 'MERN'],
-    //     default: 0,
-    //     when: ({ contents }) => {
-    //         if (contents.indexOf('Technologies') > -1) {
-    //             return true;
-    //         } else {
-    //             return false;
-    //         }
-    //     }
-    // }, 
     {
         type: 'input',
         message: 'Please enter your guidelines for contributing.',
@@ -158,7 +144,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please enter test information for your application.',
+        message: 'What command shoud be run to run tests?',
         name: 'tests',
         validate: testsInput => {
             if (testsInput) {
@@ -182,137 +168,9 @@ const questions = [
             }
         }
     },
-// ];
 
-// array of prompts for adding acceptance criteria and screenshots
-// const screenshotQuestions = [
-    // {
-    //     type: 'input',
-    //     message: 'Please provide the acceptance criteria and screenshots. (Required)',
-    //     name: 'acceptanceCriteriaandScreenshots',
-    //     validate: acceptanceCriteriaandScreenshotsInput => {
-    //         if (acceptanceCriteriaandScreenshotsInput) {
-    //             return true;
-    //         } else {
-    //             console.log('Please provide the acceptance criteria and screenshots!')
-    //             return false;
-    //         }
-    //     }
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Please provide alt text for your screenshot. (Required)',
-    //     name: 'screenshotsAlt',
-    //     validate: screenshotsAltInput => {
-    //         if (screenshotsAltInput) {
-    //             return true;
-    //         } else {
-    //             return false;
-    //         }
-    //     }
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Please provide descriptions of your screenshots. (Optional)',
-    //     name: 'screenshotDescriptions'
-    // },
-    // {
-    //     type: 'confirm',
-    //     message: 'Would you like to add another screenshot?',
-    //     name: 'confirmAddScreenshots',
-    //     default: true
-    // }
 ];
 
-// array of prompts for adding credits
-// const creditQuestions = [
-//     {
-//         type: 'input',
-//         message: 'Please give your credit a name. (Required)',
-//         name: 'creditName',
-//         validate: creditName => {
-//             if (creditName) {
-//                 return true;
-//             } else {
-//                 console.log('Please enter a name for the credit!');
-//                 return false;
-//             }
-//         }
-//     },
-//     {
-//         type: 'input',
-//         message: 'Please provide a link for the credit.  (Required)',
-//         name: 'creditLink',
-//         validate: creditLink => {
-//             if (creditLink) {
-//                 return true;
-//             } else {
-//                 console.log('Please enter a name for the credit!');
-//                 return false;
-//             }
-//         }
-//     },
-//     {
-//         type: 'confirm',
-//         message: 'Would you like to add another credit?',
-//         name: 'confirmAddCredit',
-//         default: true
-//     }
-// ]
-
-// recursive function for adding screenshots
-// addScreenshots = readmeData => {
-    
-    // initiates screenshot array
-//     if (!readmeData.screenshots) {
-//         readmeData.screenshots = [];
-//     }
-//     console.log(`
-// ==================
-// Add New Screenshot
-// ==================
-//     `);
-//     return inquirer.prompt(screenshotQuestions)
-//     .then(screenshotData => {
-        
-        // adds the screenshot to the array
-        // readmeData.screenshots.push(screenshotData);
-        
-        // will call addScreenshots again based on user input
-//         if (screenshotData.confirmAddScreenshots) {
-//             return addScreenshots(readmeData);
-//         } else {
-//             return readmeData;
-//         };
-//     });
-// };
-
-// recursive function for adding credits
-// addCredits = readmeInfo => {
-    
-    // initiates array for credits
-//     if (!readmeInfo.credits) {
-//         readmeInfo.credits = [];
-//     };
-//     console.log(`
-// ==============
-// Add New Credit
-// ==============
-//     `);
-//     return inquirer.prompt(creditQuestions)
-//     .then(creditData => {
-        
-        // adds credits to array
-        // readmeInfo.credits.push(creditData);
-        
-        // will call addCredits again based on user input
-//         if (creditData.confirmAddCredit) {
-//             return addCredits(readmeInfo);
-//         } else {
-//             return readmeInfo;
-//         }
-//     });
-// };
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -327,24 +185,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
      inquirer.prompt(questions)
-    //  .then(userResponse => { 
-       
-        // calls function to add screenshots based on user selection
-    //     if (userResponse.contents.indexOf('Screenshots') > -1) {
-    //         return addScreenshots(userResponse);
-    //     } else {
-    //         return userResponse;
-    //     }
-    // })
-    // .then(response => {
-        
-        // calls function to add credits based on user selection
-    //     if (response.contents.indexOf('Credits') > -1) {
-    //         return addCredits(response);
-    //     } else {
-    //         return response;
-    //     }
-    // })
+    
     .then(answers => generateMarkdown(answers))
     .then(generatedReadme => writeToFile('README.md', generatedReadme))
     .catch(err => {

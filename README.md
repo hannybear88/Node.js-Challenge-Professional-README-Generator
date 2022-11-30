@@ -1,3 +1,8 @@
+${addLicenseBadge(license)}  
+[![Issues](https://img.shields.io/github/issues/${github}/${
+  repo
+
+
 # Node.js-Challenge-Professional-README-Generator
 HW Challenge #9
 
