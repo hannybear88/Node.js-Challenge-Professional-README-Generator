@@ -1,28 +1,7 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
-}
-
-module.exports = generateMarkdown;
-
 // creates license badge if license is chosen
 const addLicenseBadge = license => {
   if (license) {
-      return `[GitHub license](https://img.shields.io/badge/license-MIT-blue.svg);`
+      return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   } else {
       return '';
   }
@@ -45,13 +24,13 @@ const createTableOfContents = contentsArray => {
   contentsArray.forEach((item) => {
 
       // indents 'Acceptance Criteria and Screenshots' list item
-      if (item.content && item.header === 'Accceptance Criteria and Screenshots') {
-      contentsList += `   * [${item.header}](#${(item.header).toLowerCase()})
-`;
-      } else if (item.content) {
-          contentsList += `* [${item.header}](#${(item.header).toLowerCase().split(' ').join('-')})
-`;
-      }
+//       if (item.content && item.header === 'Accceptance Criteria and Screenshots') {
+//       contentsList += `   * [${item.header}](#${(item.header).toLowerCase()})
+// `;
+//       } else if (item.content) {
+//           contentsList += `* [${item.header}](#${(item.header).toLowerCase().split(' ').join('-')})
+// `;
+//       }
   });
   return contentsList;
 };
@@ -67,19 +46,19 @@ ${install}
   }
 };
 // creates acceptance criteria and screenshots section
-const createAcceptanceCriteriaAndScreenshots = acceptanceCriteriaandScreenshotsItem => {
-  let allAcceptanceCriteriaandScreenshots = '';
-  if (acceptanceCriteriaandScreenshotsscreenshotItem) {
-    AcceptanceCriteriaandScreenshotsItem.forEach(shot => {
-      allAcceptanceCriteriaandScreenshots += `![${shot.screenshotAlt}](${shot.screenshots})
-${shot.screenshotDescriptions}
-`;
-  });
-  return `${allAcceptanceCriteriaandScreenshots}`;
-  } else {
-      return '';
-  }
-};
+  // const createAcceptanceCriteriaAndScreenshots = acceptanceCriteriaandScreenshotsItem => {
+  //   let allAcceptanceCriteriaandScreenshots = '';
+  //   if (acceptanceCriteriaandScreenshotsscreenshotItem) {
+  //     AcceptanceCriteriaandScreenshotsItem.forEach(shot => {
+  //       allAcceptanceCriteriaandScreenshots += `![${shot.screenshotAlt}](${shot.screenshots})
+  // ${shot.screenshotDescriptions}
+  // `;
+  //   });
+  //   return `${allAcceptanceCriteriaandScreenshots}`;
+  //   } else {
+  //       return '';
+  //   }
+  // };
 
 // creates technologies section
 const createTechnologies = technologies =>{
@@ -205,7 +184,7 @@ ${sectionItem.content}
       }
   });
   return `# ${title}
-  
+${addLicenseBadge(license)}  
 [![Issues](https://img.shields.io/github/issues/${github}/${
   repo
 })](https://github.com/${github}/${

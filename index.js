@@ -105,14 +105,14 @@ const questions = [
                 name: 'Usage',
                 // checked: ''
             },
-            {
-                name: 'User Story',
-                checked: true
-            },
-            {
-                name: 'Acceptance Criteria and Screenshots',
-                checked: true
-            },
+            // {
+            //     name: 'User Story',
+            //     checked: true
+            // },
+            // {
+            //     name: 'Acceptance Criteria and Screenshots',
+            //     checked: true
+            // },
             {
                 name: 'Technologies',
                 checked: true
@@ -133,14 +133,14 @@ const questions = [
                 name: 'Questions',
                 checked: true
             },
-            {
-                name: 'Credits',
-                checked: true
-            },
-            {
-                name: 'Contributors',
-                checked: true
-            },
+            // {
+            //     name: 'Credits',
+            //     checked: true
+            // },
+            // {
+            //     name: 'Contributors',
+            //     checked: true
+            // },
         ]
     },
     {
@@ -205,20 +205,20 @@ const questions = [
             }
         }
     }, 
-    {
-        type: 'checkbox',
-        message: 'Please select the technologies that your application was built with.',
-        name: 'technologies',
-        choices: ['HTML', 'CSS', 'SASS', 'JavaScript', 'Node.js'],
-        default: 0,
-        when: ({ contents }) => {
-            if (contents.indexOf('Technologies') > -1) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    }, 
+    // {
+    //     type: 'checkbox',
+    //     message: 'Please select the technologies that your application was built with.',
+    //     name: 'technologies',
+    //     choices: ['HTML', 'CSS', 'SASS', 'JavaScript', 'Node.js'],
+    //     default: 0,
+    //     when: ({ contents }) => {
+    //         if (contents.indexOf('Technologies') > -1) {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     }
+    // }, 
     {
         type: 'input',
         message: 'Please enter your guidelines for contributing.',
@@ -283,137 +283,137 @@ const questions = [
 
 // array of prompts for adding acceptance criteria and screenshots
 // const screenshotQuestions = [
-    {
-        type: 'input',
-        message: 'Please provide the acceptance criteria and screenshots. (Required)',
-        name: 'acceptanceCriteriaandScreenshots',
-        validate: acceptanceCriteriaandScreenshotsInput => {
-            if (acceptanceCriteriaandScreenshotsInput) {
-                return true;
-            } else {
-                console.log('Please provide the acceptance criteria and screenshots!')
-                return false;
-            }
-        }
-    },
-    {
-        type: 'input',
-        message: 'Please provide alt text for your screenshot. (Required)',
-        name: 'screenshotsAlt',
-        validate: screenshotsAltInput => {
-            if (screenshotsAltInput) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    },
-    {
-        type: 'input',
-        message: 'Please provide descriptions of your screenshots. (Optional)',
-        name: 'screenshotDescriptions'
-    },
-    {
-        type: 'confirm',
-        message: 'Would you like to add another screenshot?',
-        name: 'confirmAddScreenshots',
-        default: true
-    }
+    // {
+    //     type: 'input',
+    //     message: 'Please provide the acceptance criteria and screenshots. (Required)',
+    //     name: 'acceptanceCriteriaandScreenshots',
+    //     validate: acceptanceCriteriaandScreenshotsInput => {
+    //         if (acceptanceCriteriaandScreenshotsInput) {
+    //             return true;
+    //         } else {
+    //             console.log('Please provide the acceptance criteria and screenshots!')
+    //             return false;
+    //         }
+    //     }
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'Please provide alt text for your screenshot. (Required)',
+    //     name: 'screenshotsAlt',
+    //     validate: screenshotsAltInput => {
+    //         if (screenshotsAltInput) {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     }
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'Please provide descriptions of your screenshots. (Optional)',
+    //     name: 'screenshotDescriptions'
+    // },
+    // {
+    //     type: 'confirm',
+    //     message: 'Would you like to add another screenshot?',
+    //     name: 'confirmAddScreenshots',
+    //     default: true
+    // }
 ];
 
 // array of prompts for adding credits
-const creditQuestions = [
-    {
-        type: 'input',
-        message: 'Please give your credit a name. (Required)',
-        name: 'creditName',
-        validate: creditName => {
-            if (creditName) {
-                return true;
-            } else {
-                console.log('Please enter a name for the credit!');
-                return false;
-            }
-        }
-    },
-    {
-        type: 'input',
-        message: 'Please provide a link for the credit.  (Required)',
-        name: 'creditLink',
-        validate: creditLink => {
-            if (creditLink) {
-                return true;
-            } else {
-                console.log('Please enter a name for the credit!');
-                return false;
-            }
-        }
-    },
-    {
-        type: 'confirm',
-        message: 'Would you like to add another credit?',
-        name: 'confirmAddCredit',
-        default: true
-    }
-]
+// const creditQuestions = [
+//     {
+//         type: 'input',
+//         message: 'Please give your credit a name. (Required)',
+//         name: 'creditName',
+//         validate: creditName => {
+//             if (creditName) {
+//                 return true;
+//             } else {
+//                 console.log('Please enter a name for the credit!');
+//                 return false;
+//             }
+//         }
+//     },
+//     {
+//         type: 'input',
+//         message: 'Please provide a link for the credit.  (Required)',
+//         name: 'creditLink',
+//         validate: creditLink => {
+//             if (creditLink) {
+//                 return true;
+//             } else {
+//                 console.log('Please enter a name for the credit!');
+//                 return false;
+//             }
+//         }
+//     },
+//     {
+//         type: 'confirm',
+//         message: 'Would you like to add another credit?',
+//         name: 'confirmAddCredit',
+//         default: true
+//     }
+// ]
 
 // recursive function for adding screenshots
-addScreenshots = readmeData => {
+// addScreenshots = readmeData => {
     
     // initiates screenshot array
-    if (!readmeData.screenshots) {
-        readmeData.screenshots = [];
-    }
-    console.log(`
-==================
-Add New Screenshot
-==================
-    `);
-    return inquirer.prompt(screenshotQuestions)
-    .then(screenshotData => {
+//     if (!readmeData.screenshots) {
+//         readmeData.screenshots = [];
+//     }
+//     console.log(`
+// ==================
+// Add New Screenshot
+// ==================
+//     `);
+//     return inquirer.prompt(screenshotQuestions)
+//     .then(screenshotData => {
         
         // adds the screenshot to the array
-        readmeData.screenshots.push(screenshotData);
+        // readmeData.screenshots.push(screenshotData);
         
         // will call addScreenshots again based on user input
-        if (screenshotData.confirmAddScreenshots) {
-            return addScreenshots(readmeData);
-        } else {
-            return readmeData;
-        };
-    });
-};
+//         if (screenshotData.confirmAddScreenshots) {
+//             return addScreenshots(readmeData);
+//         } else {
+//             return readmeData;
+//         };
+//     });
+// };
 
 // recursive function for adding credits
-addCredits = readmeInfo => {
+// addCredits = readmeInfo => {
     
     // initiates array for credits
-    if (!readmeInfo.credits) {
-        readmeInfo.credits = [];
-    };
-    console.log(`
-==============
-Add New Credit
-==============
-    `);
-    return inquirer.prompt(creditQuestions)
-    .then(creditData => {
+//     if (!readmeInfo.credits) {
+//         readmeInfo.credits = [];
+//     };
+//     console.log(`
+// ==============
+// Add New Credit
+// ==============
+//     `);
+//     return inquirer.prompt(creditQuestions)
+//     .then(creditData => {
         
         // adds credits to array
-        readmeInfo.credits.push(creditData);
+        // readmeInfo.credits.push(creditData);
         
         // will call addCredits again based on user input
-        if (creditData.confirmAddCredit) {
-            return addCredits(readmeInfo);
-        } else {
-            return readmeInfo;
-        }
-    });
-};
+//         if (creditData.confirmAddCredit) {
+//             return addCredits(readmeInfo);
+//         } else {
+//             return readmeInfo;
+//         }
+//     });
+// };
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`./dist/${fileName}`, data, err => {
+    fs.writeFile(`./output/${fileName}`, data, err => {
         if (err) {
             throw err
         };
