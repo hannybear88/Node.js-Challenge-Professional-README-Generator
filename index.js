@@ -144,7 +144,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What command shoud be run to run tests?',
+        message: 'What command should be run to run tests?',
         name: 'tests',
         validate: testsInput => {
             if (testsInput) {
