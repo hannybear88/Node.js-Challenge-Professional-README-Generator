@@ -1,11 +1,17 @@
-# generate Professional README
+# Professional README Generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)  
 [![Issues](https://img.shields.io/github/issues/hannybear88/Node.js-Challenge-Professional-README-Generator)](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/issues) [![Issues](https://img.shields.io/github/contributors/hannybear88/Node.js-Challenge-Professional-README-Generator)](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/graphs/contributors) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-generating a professional readme
+generating a professional README
           
-View the deployed page at [generate Professional README](N/A).
+View the deployed page at [Professional README Generator](N/A).
 ## Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 To use this application, please install: 
@@ -14,7 +20,7 @@ inquirer
 ```
   
 ## Usage
-npm install
+npm i
   
 ## License
 This application is licensed under the MIT license.

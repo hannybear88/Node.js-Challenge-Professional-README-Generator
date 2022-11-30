@@ -24,13 +24,13 @@ const createTableOfContents = contentsArray => {
   contentsArray.forEach((item) => {
 
       // indents 'Acceptance Criteria and Screenshots' list item
-//       if (item.content && item.header === 'Accceptance Criteria and Screenshots') {
-//       contentsList += `   * [${item.header}](#${(item.header).toLowerCase()})
-// `;
-//       } else if (item.content) {
-//           contentsList += `* [${item.header}](#${(item.header).toLowerCase().split(' ').join('-')})
-// `;
-//       }
+      if (item.content && item.header === 'Accceptance Criteria and Screenshots') {
+      contentsList += `   * [${item.header}](#${(item.header).toLowerCase()})
+`;
+      } else if (item.content) {
+          contentsList += `* [${item.header}](#${(item.header).toLowerCase().split(' ').join('-')})
+`;
+      }
   });
   return contentsList;
 };
