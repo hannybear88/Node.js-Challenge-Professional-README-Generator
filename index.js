@@ -118,7 +118,7 @@ const questions = [
         type: 'list',
         message: 'Please choose a license for your application',
         name: 'license',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'ISC'],
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         default: 0,
         validate: licenseInput => {
             if (licenseInput) {

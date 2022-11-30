@@ -46,21 +46,6 @@ ${install}
   }
 };
 
-// creates technologies section
-// const createTechnologies = technologies =>{
-//   let allTechnologies = '';
-
-//   if (technologies) {
-//       technologies.forEach(item => {
-//           allTechnologies += `
-// * ${item}`
-//       });
-//       return `${allTechnologies}`;
-//   } else {
-//       return '';
-//   };
-// };
-
 // creates usage section
 const createUsage = (usage) => {
   return `${usage}`
@@ -75,11 +60,9 @@ const createLicense = license => {
 };
 const createTest = test => {
   if (test) {
-      return `To run tests on the application, install
-\`\`\`
+      return `To run tests on the application, run the following command:
 ${test}
-\`\`\`
-and run \`npm run test\` from the command line.`
+\`\`\``
   } else {
       return '';
   };
@@ -119,10 +102,6 @@ function generateMarkdown(data) {
         content: createUsage(data.usage)
     },
    
-      // {
-      //     header: 'Technologies',
-      //     content: createTechnologies(data['technologies'])
-      // },
       {
           header: 'License',
           content: createLicense(license)
