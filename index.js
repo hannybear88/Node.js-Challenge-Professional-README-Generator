@@ -89,71 +89,9 @@ const questions = [
         }
     },
     {
-        type: 'checkbox',
-        message: 'Any additional sections you would like to include in your README?',
-        name: 'contents',
-        choices: [
-            {
-                name: 'Deployed Application',
-                checked: false
-            },
-            {
-                name: 'Installation',
-                checked: false
-            },
-            {
-                name: 'Usage',
-                // checked: ''
-            },
-            // {
-            //     name: 'User Story',
-            //     checked: true
-            // },
-            // {
-            //     name: 'Acceptance Criteria and Screenshots',
-            //     checked: true
-            // },
-            {
-                name: 'Technologies',
-                checked: true
-            },
-            {
-                name: 'License',
-                checked: false
-            },
-            {
-                name: 'Contributing',
-                checked: false
-            },
-            {
-                name: 'Tests',
-                checked: false
-            },
-            {
-                name: 'Questions',
-                checked: true
-            },
-            // {
-            //     name: 'Credits',
-            //     checked: true
-            // },
-            // {
-            //     name: 'Contributors',
-            //     checked: true
-            // },
-        ]
-    },
-    {
         type: 'input',
         message: 'Please provide a link to your deployed application.',
         name: 'link',
-        when: ({ contents }) => {
-            if (contents.indexOf('Deployed Application') > -1) {
-                return true;
-            } else { 
-                return false;
-            }
-        },
         validate: linkInput => {
             if (linkInput) {
                 return true;
@@ -167,13 +105,6 @@ const questions = [
         type: 'input',
         message: 'Please list any required packages for installation of your application.',
         name: 'installation',
-        when: ({ contents }) => {
-            if (contents.indexOf('Installation') > -1) {
-                return true;
-            } else {
-                return false;
-            }
-        },
         validate: installInput => {
             if (installInput) {
                 return true;
@@ -189,13 +120,6 @@ const questions = [
         name: 'license',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'ISC'],
         default: 0,
-        when: ({ contents }) => {
-            if (contents.indexOf('License') > -1) {
-                return true;
-            } else {
-                return false;
-            }
-        },
         validate: licenseInput => {
             if (licenseInput) {
                 return true;
@@ -209,7 +133,7 @@ const questions = [
     //     type: 'checkbox',
     //     message: 'Please select the technologies that your application was built with.',
     //     name: 'technologies',
-    //     choices: ['HTML', 'CSS', 'SASS', 'JavaScript', 'Node.js'],
+    //     choices: ['HTML', 'CSS', 'Javascript', 'Node.js', 'Markdown.js', 'GraphQL', 'MERN'],
     //     default: 0,
     //     when: ({ contents }) => {
     //         if (contents.indexOf('Technologies') > -1) {

@@ -8,12 +8,12 @@ The motivation of this project is that I can learn how to create a professional 
 <nav>
     <ol>
         <li><a href="#Installation">Installation</a></li>
-        <li><a href="User-Story">User Story</a></li>
+        <li><a href="#User-Story">User Story</a></li>
          <li><a href="#How-to-Use-this-Project-and-Acceptance-Criteria">How to Use This Project and Acceptance Criteria</a></li>
           <li><a href="#Challenges">Challenges</a></li>
         <li><a href="#Success">Success</a></li>
          <li><a href="#Demo">Demo</a></li>
-         <li><a href="#Features">Features</a></li>
+         <li><a href="#Technologies">Technologies</a></li>
           <li><a href="#Support">Support</a></li>
         <li><a href="#Credits">Credits</a></li>
         <li><a href="#Contributors">Contributors</a></li>
@@ -34,6 +34,9 @@ SO THAT I can quickly create a professional README for a new project<br>
 
 ## How to Use This Project and Acceptance Criteria
 
+<u><i><strong>Click on the image below to be directed straight to the generated readme</strong></i></u></a> 
+<a href= "https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/tree/main/output"><img src="" alt = "generated readme" /></a>
+
 
 GIVEN a command-line application that accepts user input<br>
 WHEN I am prompted for information about my application repository<br>
@@ -53,34 +56,40 @@ THEN I am taken to the corresponding section of the README<br>
 
 
 ## Challenges
-A challenge I came across was making sure I understand the homework, so that I was doing it correctly. 
-At first, I had thought the assignment was generating a professional README for this particular assignment. Then with help from my classmate, she had explained to me that the assignment is to learn how generate a professional README in general. 
+A challenge I came across was making sure I understand the homework, so that I was doing it correctly. At first, I had thought the assignment was generating a professional README for this particular assignment. Then with help from my classmate, she had explained to me that the assignment is to learn how generate a professional README in general. 
 
 
 ## Success
 The success I am across is creating a professional README. I enjoyed creating the questions and the code for it. At first it was a bit confusing, but with the help from the instructor, TAs, and classmates, it was made more clear and I realized that this assignment is pretty straight forward. 
 
 ## Demo
+<!--screenshots-->
 
-##  Features
+##  Technologies
+
+<ul>
+    <li>Javascript</li>
+    <li>Markdown</li>
+</ul>
 
 ##  Support
 
-If you have any questions about my repo, please do not hesitate to open an issue <a href> or contact me via email here. You can checkout more of my work on my GitHub Profile by clicking here <a href> https://github.com/hannybear88
+If you have any questions about my repo, please do not hesitate to <a href="https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/issues">open an issue</a> or please contact me via <a href="mailto:hannahkchung88@gmail.com">email here</a>.You can checkout more of my work on my GitHub Profile by clicking  <a href="https://github.com/hannybear88"> here</a>
+
 
 ##  Credits
 
-<ol>
+<ul>
         <li>Starter Code provided by UCSD Coding Bootcamp</li>
-        <li>Hannah Chung</li>
- </ol>
+        <li>Code refactored by Hannah Chung</li>
+ </ul>
 
 ##  Contributors
 
-<ol>
+<ul>
         <li>Starter Code provided by UCSD Coding Bootcamp></li>
-        <li>Hannah Chung</li>
- </ol>
+        <li>Code refactored by Hannah Chung</li>
+ </ul>
 
 
 
