@@ -13,6 +13,19 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
     {
         type: 'input',
+        message: 'Please provide your first and last name.  (Required)',
+        name: 'first and last name',
+        validate: firstAndLastNameInput => {
+            if (firstAndLastNameInput ) {
+                return true;
+            } else {
+                console.log('Please provide your first and last name!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
         message: 'Please provide a project title.  (Required)',
         name: 'title',
         validate: nameInput => {
@@ -265,20 +278,20 @@ const questions = [
                 return false;
             }
         }
-    }
-];
+    },
+// ];
 
-// array of prompts for adding acceptance criteria and adding screenshots
-const screenshotQues = [
+// array of prompts for adding acceptance criteria and screenshots
+// const screenshotQuestions = [
     {
         type: 'input',
-        message: 'Please provide the acceptance criteria and links for your screenshots. (Required)',
-        name: 'acceptanceCriteriaandScreenshotLinks',
-        validate: acceptanceCriteriaandScreenshotLinksInput => {
-            if (acceptanceCriteriaandScreenshotLinksInput) {
+        message: 'Please provide the acceptance criteria and screenshots. (Required)',
+        name: 'acceptanceCriteriaandScreenshots',
+        validate: acceptanceCriteriaandScreenshotsInput => {
+            if (acceptanceCriteriaandScreenshotsInput) {
                 return true;
             } else {
-                console.log('Please provide the acceptance criteria and links for your screenshots!')
+                console.log('Please provide the acceptance criteria and screenshots!')
                 return false;
             }
         }
@@ -363,7 +376,7 @@ Add New Screenshot
         readmeData.screenshots.push(screenshotData);
         
         // will call addScreenshots again based on user input
-        if (screenshotData.confirmAddScreenshot) {
+        if (screenshotData.confirmAddScreenshots) {
             return addScreenshots(readmeData);
         } else {
             return readmeData;

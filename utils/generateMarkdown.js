@@ -22,7 +22,7 @@ module.exports = generateMarkdown;
 // creates license badge if license is chosen
 const addLicenseBadge = license => {
   if (license) {
-      return `MIT License ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg);`
+      return `[GitHub license](https://img.shields.io/badge/license-MIT-blue.svg);`
   } else {
       return '';
   }
@@ -44,8 +44,8 @@ const createTableOfContents = contentsArray => {
   let contentsList = '';
   contentsArray.forEach((item) => {
 
-      // indents 'Screenshots' list item
-      if (item.content && item.header === 'Screenshots') {
+      // indents 'Acceptance Criteria and Screenshots' list item
+      if (item.content && item.header === 'Accceptance Criteria and Screenshots') {
       contentsList += `   * [${item.header}](#${(item.header).toLowerCase()})
 `;
       } else if (item.content) {
@@ -71,7 +71,7 @@ const createAcceptanceCriteriaAndScreenshots = acceptanceCriteriaandScreenshotsI
   let allAcceptanceCriteriaandScreenshots = '';
   if (acceptanceCriteriaandScreenshotsscreenshotItem) {
     AcceptanceCriteriaandScreenshotsItem.forEach(shot => {
-      allAcceptanceCriteriaandScreenshots += `![${shot.screenshotAlt}](${shot.screenshotLink})
+      allAcceptanceCriteriaandScreenshots += `![${shot.screenshotAlt}](${shot.screenshots})
 ${shot.screenshotDescriptions}
 `;
   });
@@ -155,12 +155,12 @@ function generateMarkdown(data) {
     },
       {
           header: 'User Story',
-          content: createUsage(data.userStory)
+          content: createUserStory(data.userStory)
       },
-      {
-          // header: 'Acceptance Criteria And Screenshots',
-          // content: acceptanceCriteriaAndScreenshots(data.acceptanceCriteriaAndScreenshots)
-      },
+      // {
+      //     header: 'Acceptance Criteria And Screenshots',
+      //     content: acceptanceCriteriaAndScreenshots(data.acceptanceCriteriaAndScreenshots)
+      // },
       {
           header: 'Technologies',
           content: createTechnologies(data['technologies'])
@@ -205,6 +205,7 @@ ${sectionItem.content}
       }
   });
   return `# ${title}
+  
 [![Issues](https://img.shields.io/github/issues/${github}/${
   repo
 })](https://github.com/${github}/${
