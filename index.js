@@ -77,7 +77,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide information on the usage of your application. (Required)',
+        message: 'What does the user need to know about using your application. (Required)',
         name: 'usage',
         validate: usageInput => {
             if (usageInput) {
@@ -88,19 +88,19 @@ const questions = [
             }
         }
     },
-    {
-        type: 'input',
-        message: 'Please provide a link to your deployed application.',
-        name: 'link',
-        validate: linkInput => {
-            if (linkInput) {
-                return true;
-            } else {
-                console.log('Please enter a link!');
-                return false;
-            }
-        }
-    },
+    // {
+    //     type: 'input',
+    //     message: 'Please provide a link to your deployed application.',
+    //     name: 'link',
+    //     validate: linkInput => {
+    //         if (linkInput) {
+    //             return true;
+    //         } else {
+    //             console.log('Please enter a link!');
+    //             return false;
+    //         }
+    //     }
+    // },
     {
         type: 'input',
         message: 'What command should be run to install dependencies?',
@@ -116,7 +116,7 @@ const questions = [
     },
     {
         type: 'list',
-        message: 'What kind of license should your project have?',
+        message: 'Please choose a license for your application',
         name: 'license',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'ISC'],
         default: 0,
@@ -124,7 +124,7 @@ const questions = [
             if (licenseInput) {
                 return true;
             } else {
-                console.log('Please provide what kind of license your project should have!');
+                console.log('Please provide a license for your application!');
                 return false;
             }
         }
@@ -174,7 +174,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`./output/${fileName}`, data, err => {
+    fs.writeFile(`./dist/${fileName}`, data, err => {
         if (err) {
             throw err
         };

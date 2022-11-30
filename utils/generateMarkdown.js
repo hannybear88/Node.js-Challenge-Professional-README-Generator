@@ -47,19 +47,19 @@ ${install}
 };
 
 // creates technologies section
-const createTechnologies = technologies =>{
-  let allTechnologies = '';
+// const createTechnologies = technologies =>{
+//   let allTechnologies = '';
 
-  if (technologies) {
-      technologies.forEach(item => {
-          allTechnologies += `
-* ${item}`
-      });
-      return `${allTechnologies}`;
-  } else {
-      return '';
-  };
-};
+//   if (technologies) {
+//       technologies.forEach(item => {
+//           allTechnologies += `
+// * ${item}`
+//       });
+//       return `${allTechnologies}`;
+//   } else {
+//       return '';
+//   };
+// };
 
 // creates usage section
 const createUsage = (usage) => {
@@ -119,10 +119,10 @@ function generateMarkdown(data) {
         content: createUsage(data.usage)
     },
    
-      {
-          header: 'Technologies',
-          content: createTechnologies(data['technologies'])
-      },
+      // {
+      //     header: 'Technologies',
+      //     content: createTechnologies(data['technologies'])
+      // },
       {
           header: 'License',
           content: createLicense(license)

@@ -2,9 +2,9 @@
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)  
 [![Issues](https://img.shields.io/github/issues/hannybear88/Node.js-Challenge-Professional-README-Generator)](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/issues) [![Issues](https://img.shields.io/github/contributors/hannybear88/Node.js-Challenge-Professional-README-Generator)](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/graphs/contributors) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-Generating a professional README
+It is a command-line applicatoin that dynamically generates a professional README.md file from a user's input. 
           
-View the deployed page at [Professional README Generator](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/tree/main/output).
+View the deployed page at [Professional README Generator](N/A).
 ## Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,7 +16,7 @@ View the deployed page at [Professional README Generator](https://github.com/han
 ## Installation
 To use this application, please install: 
 ```
-inquirer
+npm install
 ```
   
 ## Usage
@@ -26,12 +26,12 @@ npm install
 This application is licensed under the MIT license.
   
 ## Contributing
-none at this time
+If you would like to contribute fork the repo, then  edit the  code and do a pull request
   
 ## Tests
 To run tests on the application, install
 ```
-tests
+npm test
 ```
 and run `npm run test` from the command line.
   
