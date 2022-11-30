@@ -153,10 +153,10 @@ function generateMarkdown(data) {
         header: 'Usage',
         content: createUsage(data.usage)
     },
-      {
-          header: 'User Story',
-          content: createUserStory(data.userStory)
-      },
+      // {
+      //     header: 'User Story',
+      //     content: createUserStory(data.userStory)
+      // },
       // {
       //     header: 'Acceptance Criteria And Screenshots',
       //     content: acceptanceCriteriaAndScreenshots(data.acceptanceCriteriaAndScreenshots)
