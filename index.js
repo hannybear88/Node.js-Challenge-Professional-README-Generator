@@ -147,13 +147,6 @@ const questions = [
         type: 'input',
         message: 'Please enter your guidelines for contributing.',
         name: 'contributing',
-        when: ({ contents }) => {
-            if (contents.indexOf('Contributing') > -1) {
-                return true;
-            } else {
-                return false;
-            }
-        },
         validate: contributingInput => {
             if (contributingInput) {
                 return true;
@@ -167,13 +160,6 @@ const questions = [
         type: 'input',
         message: 'Please enter test information for your application.',
         name: 'tests',
-        when: ({ contents }) => {
-            if (contents.indexOf('Tests') > -1) {
-                return true;
-            } else {
-                return false;
-            }
-        },
         validate: testsInput => {
             if (testsInput) {
                 return true;
@@ -187,13 +173,6 @@ const questions = [
         type: 'input',
         message: 'Please provide an email address for others to reach you with questions.',
         name: 'questions',
-        when: ({ contents }) => {
-            if (contents.indexOf('Questions') > -1) {
-                return true;
-            } else { 
-                return false;
-            }
-        },
         validate: questionsInput => {
             if (questionsInput) {
                 return true;
@@ -348,24 +327,24 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
      inquirer.prompt(questions)
-     .then(userResponse => { 
+    //  .then(userResponse => { 
        
         // calls function to add screenshots based on user selection
-        if (userResponse.contents.indexOf('Screenshots') > -1) {
-            return addScreenshots(userResponse);
-        } else {
-            return userResponse;
-        }
-    })
-    .then(response => {
+    //     if (userResponse.contents.indexOf('Screenshots') > -1) {
+    //         return addScreenshots(userResponse);
+    //     } else {
+    //         return userResponse;
+    //     }
+    // })
+    // .then(response => {
         
         // calls function to add credits based on user selection
-        if (response.contents.indexOf('Credits') > -1) {
-            return addCredits(response);
-        } else {
-            return response;
-        }
-    })
+    //     if (response.contents.indexOf('Credits') > -1) {
+    //         return addCredits(response);
+    //     } else {
+    //         return response;
+    //     }
+    // })
     .then(answers => generateMarkdown(answers))
     .then(generatedReadme => writeToFile('README.md', generatedReadme))
     .catch(err => {
