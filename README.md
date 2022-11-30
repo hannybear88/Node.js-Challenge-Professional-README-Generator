@@ -8,9 +8,9 @@ HW Challenge #9
 <nav>
     <ol>
         <li><a href="#Installation">Installation</a></li>
-        <li><a href="User Story">User Story</a></li>
+        <li><a href="User-Story">User Story</a></li>
         <li><a href="Usage">Usage</a></li>
-         <li><a href="#How to Use this Project and Acceptance Criteria">How to Use this Project and Acceptance Criteria</a></li>
+         <li><a href="#How-to-Use-this-Project-and-Acceptance-Criteria">How to Use this Project and Acceptance Criteria</a></li>
           <li><a href="#Technology">Technology</a></li>
         <li><a href="#License">License</a></li>
          <li><a href="#Contributing">Contributing</a></li>
@@ -34,7 +34,7 @@ SO THAT I can quickly create a professional README for a new project
 
 ## Acceptance Criteria
 
-```md
+
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
