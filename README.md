@@ -1,6 +1,4 @@
-${addLicenseBadge(license)}  
-[![Issues](https://img.shields.io/github/issues/${github}/${
-  repo
+[![Issues](https://img.shields.io/github/issues/hannybear88/Node.js-Challenge-Professional-README-Generator)](https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/issues)
 
 
 # Node.js-Challenge-Professional-README-Generator
