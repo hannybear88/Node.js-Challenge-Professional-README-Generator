@@ -69,11 +69,11 @@ The success I am across is creating a professional README. I enjoyed creating th
 
 <a href="https://youtu.be/LAx32QPB85E">click here</a> to view the walkthrough video demonstrating the functionality of the application.
 
-<strong>Screenshot of  professional README generator</strong><br> 
 
+<strong>screenshot of command-line</strong><br>
 <img src="/assets/images/command-line-screenshot.png" /> <br>
 
-<strong>screenshot of command-line</strong>
+<strong>Screenshot of  professional README generator</strong><br> 
 <img src="/assets/images/generated-professional-readme-screenshot.png" /> <br>
 
 
