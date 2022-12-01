@@ -16,7 +16,6 @@ The motivation of this project is that I can learn how to create a professional 
           <li><a href="#Challenges">Challenges</a></li>
         <li><a href="#Success">Success</a></li>
          <li><a href="#Demo">Demo</a></li>
-         <li><a href="#Technologies">Technologies</a></li>
           <li><a href="#Support">Support</a></li>
         <li><a href="#Credits">Credits</a></li>
         <li><a href="#Contributors">Contributors</a></li>
