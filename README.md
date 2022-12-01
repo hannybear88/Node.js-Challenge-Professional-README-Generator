@@ -38,7 +38,7 @@ SO THAT I can quickly create a professional README for a new project<br>
 ## How to Use This Project and Acceptance Criteria
 
 <u><i><strong>Click on the image below to be directed straight to the generated readme</strong></i></u></a> 
-<a href= "https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/tree/main/output"><img src="" alt = "generated readme" /></a>
+<a href= "https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/tree/main/dist"><img src="" alt = "generated readme" /></a>
 
 
 GIVEN a command-line application that accepts user input<br>

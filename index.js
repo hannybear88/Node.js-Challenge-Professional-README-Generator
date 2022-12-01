@@ -2,12 +2,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-// const generateMarkdown = require('./utils/generateMarkdown.js');
+
 // const { log } = require('console');
 
-// MIT License ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-// [License](#license)
-// choices: [‘MIT’, ‘APACHE 2.0’, ‘GPL 3.0’, ‘BSD 3’, ‘None’],
 
 // array of questions for user input
 const questions = [
@@ -118,7 +115,7 @@ const questions = [
         type: 'list',
         message: 'Please choose a license for your application',
         name: 'license',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+        choices: ['MIT','APACHE2.0','GPL3.0','BSD3','None'],
         default: 0,
         validate: licenseInput => {
             if (licenseInput) {

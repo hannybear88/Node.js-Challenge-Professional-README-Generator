@@ -145,7 +145,7 @@ ${addLicenseBadge(license)}
   github
 }/${repo})](https://github.com/${github}/${
   repo
-}/graphs/contributors) ${addLicenseBadge(license)}
+}/graphs/contributors) 
 ## Description
 ${createDescription(title, data.description, data.link)}
 ## Contents
