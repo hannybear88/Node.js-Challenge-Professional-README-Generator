@@ -25,7 +25,7 @@ The motivation of this project is that I can learn how to create a professional 
 
 ## Installation
 
-<!-- Installation is not required, unless you plan on cloning to refactor the code. Please <a href="mailto:hannahkchung88@gmail.com">email me</a> to make sure this is okay.  -->
+Installation is not required, unless you plan on cloning to refactor the code. Please <a href="mailto:hannahkchung88@gmail.com">email me</a> to make sure this is okay. 
 
 
 ## User Story
@@ -38,7 +38,7 @@ SO THAT I can quickly create a professional README for a new project<br>
 ## How to Use This Project and Acceptance Criteria
 
 <u><i><strong>Click on the image below to be directed straight to the generated readme</strong></i></u></a> 
-<a href= "https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/tree/main/dist"><img src="" alt = "generated readme" /></a>
+<a href= "https://github.com/hannybear88/Node.js-Challenge-Professional-README-Generator/tree/main/dist"><img src="/assets/professiona-readme-generator-image-link-screenshot.png" alt = "professional generated readme" /></a>
 
 
 GIVEN a command-line application that accepts user input<br>
@@ -66,14 +66,14 @@ A challenge I came across was making sure I understand the homework, so that I w
 The success I am across is creating a professional README. I enjoyed creating the questions and the code for it. At first it was a bit confusing, but with the help from the instructor, TAs, and classmates, it was made more clear and I realized that this assignment is pretty straight forward. 
 
 ## Demo
-<!--screenshots-->
 
-##  Technologies
+<a href="https://youtu.be/LAx32QPB85E">click here</a> to view the walkthrough video demonstrating the functionality of the application.
 
-<ul>
-    <li>Javascript</li>
-    <li>Markdown</li>
-</ul>
+Screenshots of  professional README generator and screenshot of command-line.
+
+<img src="/assets/images/command-line-screenshot.png" /> <br>
+<img src="/assets/images/generated-professional-readme-screenshot.png" /> <br>
+
 
 ##  Support
 

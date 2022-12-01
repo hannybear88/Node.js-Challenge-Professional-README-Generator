@@ -1,7 +1,7 @@
 // creates license badge if license is chosen
 const addLicenseBadge = license => {
   if (license) {
-      return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+      return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](https://choosealicense.com/licenses/)`;
   } else {
       return '';
   }
